@@ -69,20 +69,23 @@ if __name__ == "__main__":
             print("Out of bounds.") # Out of bounds.
             
         else:
-            if grid[currentRow][currentCol] == EMPTY:
-                grid[currentRow][currentCol] = VISITED
-                
-            elif grid[currentRow][currentCol] == WALL:
-                done = True
-                print("Hit wall.") # Hit wall.
+            cell = grid[currentRow][currentCol]
+        if cell == EMPTY:
+            grid[currentRow][currentCol] = VISITED
+        elif cell == WALL:
+            done = True
+        
+        print("You stumble blindly into a solid concrete wall.")
+        
+        elif cell == END:
+            done = True
+            solved = True
 
-            elif grid[currentRow][currentCol] == END:
-                done = True
-                solved = True
-                print("Solved.") # Solved.
-                
-            else:
-                pass # Do nothing
+        print("SOLVED!")
+
+        else:
+            pass # Do nothing
+
         
         charIndex += 1
     # end-while
