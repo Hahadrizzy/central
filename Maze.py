@@ -13,7 +13,7 @@ WEST = 'w'
 
 if __name__ == "__main__":
     grid = [
-        [ WALL,  EMPTY,  WALL,  WALL,  WALL,  WALL,  WALL,  WALL,  WALL, WALL],
+        [ WALL,  EMPTY,  EMPTY,  WALL,  WALL,  WALL,  WALL,  WALL,  WALL, WALL],
         [START, EMPTY,  WALL,  WALL, EMPTY, EMPTY, EMPTY, EMPTY,  WALL, WALL],
         [ WALL, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY,  WALL, EMPTY,  WALL, WALL],
         [ WALL,  WALL,  WALL,  WALL, EMPTY,  WALL, EMPTY,  WALL, EMPTY, WALL],
@@ -23,6 +23,8 @@ if __name__ == "__main__":
         [ WALL,  WALL,  WALL,  WALL,  WALL,  WALL,  WALL,  WALL,  WALL, WALL],
     ]
                     # CHANGED THE 2ND WALL TO EMPTY
+                    # changed the 3rd wall to empty
+                    #changed 2nd empty to wall
     GridViewer.view(grid)
 
 
